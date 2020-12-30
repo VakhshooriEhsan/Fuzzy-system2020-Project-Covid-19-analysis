@@ -66,7 +66,7 @@ res = minmax(_xt, s)
 
 k = 0.0
 for i in range(len(res)):
-    if((res[i][0] < res[i][1] and _yt[i]<0) or (res[i][0] > res[i][1] and _yt[i]>0)):
+    if((res[i][0] > res[i][1] and _yt[i]<0) or (res[i][0] < res[i][1] and _yt[i]>0)):
         k += 1
 k = k/len(res)
 
